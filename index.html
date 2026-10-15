@@ -156,6 +156,15 @@ section{padding:120px 0}
 .portrait svg{width:46%}
 .quote{font-size:clamp(26px,3.2vw,38px);line-height:1.18;font-weight:600;letter-spacing:-.025em;margin:16px 0 28px}
 
+.leaders{list-style:none;display:grid;gap:18px}
+.leaders li{display:flex;align-items:center;gap:16px}
+.leaders .ava{flex:0 0 52px;height:52px;border-radius:15px;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:600;font-size:17px;letter-spacing:0}
+.leaders li:first-child .ava{flex-basis:60px;height:60px;border-radius:17px;font-size:19px}
+.leaders li > span:last-child{display:grid;gap:2px;min-width:0}
+.leaders b{font-size:19px;font-weight:600;letter-spacing:-.02em}
+.leaders li:first-child b{font-size:21px}
+.leaders .muted{font-size:15px;line-height:1.35}
+
 /* form */
 .form-card{max-width:680px;margin:56px auto 0;background:#fff;border-radius:28px;padding:40px;display:grid;gap:14px;box-shadow:0 1px 0 var(--line)}
 @media(max-width:560px){.form-card{padding:24px}}
@@ -399,11 +408,13 @@ footer .wrap{border-top:1px solid #d2d2d7;padding-top:20px;display:flex;flex-wra
   <div class="wrap founder">
     <div class="portrait reveal" role="img" aria-label="Место для фото руководителя"><svg viewBox="0 0 100 100"><use href="#mark-inv"/></svg></div>
     <div class="reveal">
-      <p class="eyebrow">Руководитель Академии</p>
+      <p class="eyebrow">Руководство Академии</p>
       <!-- Текст — из «Концепции деятельности»; заменить на личную цитату после согласования -->
       <p class="quote">Спорт становится инструментом воспитания, укрепления здоровья и формирования устойчивого характера.</p>
-      <p style="font-weight:600">Сухраб Расулович Манапов</p>
-      <p class="muted">Заслуженный тренер России, автор концепции Академии</p>
+      <ul class="leaders">
+        <li><span class="ava" aria-hidden="true">ТИ</span><span><b>Тажудин Абдулбариевич Исрапилов</b><span class="muted">Руководитель Академии</span></span></li>
+        <li><span class="ava" aria-hidden="true">СМ</span><span><b>Сухраб Расулович Манапов</b><span class="muted">Генеральный директор, заслуженный тренер России, автор концепции Академии</span></span></li>
+      </ul>
     </div>
   </div>
 </section>
