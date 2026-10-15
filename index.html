@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <title>Академия спорта «Патриот»</title>
-<meta name="description" content="Бесплатные занятия олимпийскими видами спорта для детей участников СВО 7–17 лет. Координатор, психолог и программа наставничества «Чемпион рядом».">
+<meta name="description" content="Адресная программа: бесплатные занятия олимпийскими видами спорта для детей участников специальной военной операции 7–17 лет. Координатор, психолог и программа наставничества «Чемпион рядом».">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -165,6 +165,18 @@ section{padding:120px 0}
 .leaders li:first-child b{font-size:21px}
 .leaders .muted{font-size:15px;line-height:1.35}
 
+/* адресность программы */
+.who{padding-top:40px}
+.who-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:56px}
+@media(max-width:1000px){.who-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.who-grid{grid-template-columns:1fr}}
+.who-card{background:var(--tile);border-radius:24px;padding:28px;display:grid;gap:8px;align-content:start}
+.who-card:first-child{background:var(--navy);color:#fff}
+.who-card:first-child p,.who-card:first-child .who-k{color:rgba(255,255,255,.78)}
+.who-k{font-size:13px;font-weight:600;color:var(--navy);text-transform:uppercase;letter-spacing:.06em}
+.who-card b{font-size:22px;font-weight:600;letter-spacing:-.025em;line-height:1.2}
+.who-card p{font-size:15px;line-height:1.45;color:var(--gray)}
+
 /* form */
 .form-card{max-width:680px;margin:56px auto 0;background:#fff;border-radius:28px;padding:40px;display:grid;gap:14px;box-shadow:0 1px 0 var(--line)}
 @media(max-width:560px){.form-card{padding:24px}}
@@ -264,6 +276,7 @@ footer .wrap{border-top:1px solid #d2d2d7;padding-top:20px;display:flex;flex-wra
   <div class="wrap wide">
     <a class="logo" href="#top"><svg width="28" height="28"><use href="#mark"/></svg><span><small>Академия спорта</small>Патриот</span></a>
     <ul>
+      <li><a href="#who">Кто участвует</a></li>
       <li><a href="#how">Как это работает</a></li>
       <li><a href="#sports">Виды спорта</a></li>
       <li><a href="#care">Поддержка</a></li>
@@ -279,7 +292,7 @@ footer .wrap{border-top:1px solid #d2d2d7;padding-top:20px;display:flex;flex-wra
   <div class="wrap">
     <p class="eyebrow">Для детей участников СВО · <span style="white-space:nowrap">7–17 лет</span></p>
     <h1 class="h-hero">Чемпионы растут <span class="accent">рядом.</span></h1>
-    <p class="sub">Шесть олимпийских видов спорта. Секция рядом с домом. Для семьи — бесплатно, круглый год.</p>
+    <p class="sub">Адресная программа для детей участников специальной военной операции. Шесть олимпийских видов спорта, секция рядом с домом — бесплатно для семьи, круглый год.</p>
     <div class="actions">
       <a class="btn shine" href="#signup">Записать ребёнка</a>
       <a class="link" href="#how">Как это работает ›</a>
@@ -303,9 +316,26 @@ footer .wrap{border-top:1px solid #d2d2d7;padding-top:20px;display:flex;flex-wra
     <p class="sub reveal" style="max-width:640px;margin:20px auto 0">Регулярный спорт, координатор семьи, психолог и наставник‑чемпион — всё в одной программе.</p>
     <div class="nums">
       <div class="num reveal"><b data-count="6">6</b><span>олимпийских видов спорта на выбор</span></div>
-      <div class="num reveal"><b>0 ₽</b><span>для семьи — секцию оплачивает Академия</span></div>
+      <div class="num reveal"><b>0 ₽</b><span>для семьи участника СВО — секцию оплачивает Академия</span></div>
       <div class="num reveal"><b data-count="500">500</b><span>детей в Республике Дагестан</span><i>План первого этапа</i></div>
       <div class="num reveal"><b data-count="12">12</b><span>месяцев в году, без пауз</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO: адресность программы -->
+<section class="who" id="who">
+  <div class="wrap wide">
+    <div class="center">
+      <p class="eyebrow reveal">Кто может участвовать</p>
+      <h2 class="h1 reveal" style="margin-top:8px">Программа создана<br>для детей участников СВО.</h2>
+      <p class="sub reveal" style="max-width:760px;margin:20px auto 0">Академия — адресная программа поддержки семей участников специальной военной операции. Поэтому все средства идут только на этих детей: оплату секции, координатора и психолога.</p>
+    </div>
+    <div class="who-grid">
+      <div class="who-card reveal"><span class="who-k">Кто</span><b>Дети участников СВО</b><p>Сын или дочь участника специальной военной операции. Заявку подаёт родитель или законный представитель.</p></div>
+      <div class="who-card reveal"><span class="who-k">Возраст</span><b>7–17 лет</b><p>Занятия подбираются по возрасту и подготовке ребёнка в выбранной секции.</p></div>
+      <div class="who-card reveal"><span class="who-k">Где</span><b>Республика Дагестан</b><p>Первый этап программы. Секции на базе Академии и в спортивных школах‑партнёрах.</p></div>
+      <div class="who-card reveal"><span class="who-k">Документы</span><b>Подтверждение участия</b><p>При зачислении координатор попросит документ об участии родителя в СВО и поможет его оформить.</p></div>
     </div>
   </div>
 </section>
@@ -321,7 +351,7 @@ footer .wrap{border-top:1px solid #d2d2d7;padding-top:20px;display:flex;flex-wra
       <div class="tile t4 reveal">
         <p class="step">Шаг 1</p>
         <h3 class="h3">Оставьте заявку</h3>
-        <p class="body">Имя, телефон, возраст ребёнка и город. Координатор перезвонит сам.</p>
+        <p class="body">Имя, телефон, возраст ребёнка и город. Координатор перезвонит, расскажет о программе и уточнит участие родителя в СВО.</p>
         <div class="big">2 <small>минуты</small></div>
       </div>
       <div class="tile t2 navy reveal">
@@ -424,7 +454,7 @@ footer .wrap{border-top:1px solid #d2d2d7;padding-top:20px;display:flex;flex-wra
   <div class="wrap center">
     <p class="eyebrow reveal">Запись</p>
     <h2 class="h1 reveal" style="margin-top:8px">Первая тренировка<br>ближе, чем кажется.</h2>
-    <p class="sub reveal" style="max-width:600px;margin:20px auto 0">Оставьте заявку — координатор перезвонит и подберёт секцию рядом с домом.</p>
+    <p class="sub reveal" style="max-width:640px;margin:20px auto 0">Заявку может оставить родитель или законный представитель ребёнка участника СВО. Координатор перезвонит и подберёт секцию рядом с домом.</p>
     <form class="form-card reveal" id="form" novalidate style="text-align:left">
       <div class="f2">
         <div class="field"><input id="f-name" name="name" autocomplete="name" required placeholder=" "><label for="f-name">Ваше имя</label></div>
@@ -435,7 +465,8 @@ footer .wrap{border-top:1px solid #d2d2d7;padding-top:20px;display:flex;flex-wra
         <div class="field"><select id="f-sport" name="sport"><option value="">Пока не выбрали</option><option>Бокс</option><option>Борьба</option><option>Гимнастика</option><option>Плавание</option><option>Дзюдо</option><option>Тхэквондо</option></select><label for="f-sport">Вид спорта</label></div>
       </div>
       <div class="field"><input id="f-city" name="city" placeholder=" "><label for="f-city">Город или район</label></div>
-      <label class="consent"><input type="checkbox" required> Я согласен(на) на обработку персональных данных</label>
+      <label class="consent" for="f-svo"><input id="f-svo" type="checkbox" required> Подтверждаю, что родитель ребёнка — участник специальной военной операции. Подтверждающий документ координатор попросит при зачислении.</label>
+      <label class="consent" for="f-pd"><input id="f-pd" type="checkbox" required> Я согласен(на) на обработку персональных данных</label>
       <button class="btn shine" type="submit">Отправить заявку</button>
       <div class="ok" id="ok" role="status">Спасибо! Координатор свяжется с вами.</div>
     </form>
